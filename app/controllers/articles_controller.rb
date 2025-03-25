@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-    before_action :set_article, only: [:show, :edit, :update, :destroy]
+    before_action :set_article, only: [ :show, :edit, :update, :destroy ]
 
     def show
     end
@@ -16,12 +16,12 @@ class ArticlesController < ApplicationController
     end
 
     def create
-        @article = Article.new(article_params);
+        @article = Article.new(article_params)
         if @article.save
             flash[:notice] = "Article was created Successfully."
             redirect_to @article
         else
-            render 'new'
+            render "new"
         end
     end
 
@@ -30,7 +30,7 @@ class ArticlesController < ApplicationController
             flash[:notice] = "Article was updated successfully."
             redirect_to @article
         else
-            render 'edit'
+            render "edit"
 
         end
     end
@@ -40,7 +40,7 @@ class ArticlesController < ApplicationController
         redirect_to articles_path
     end
 
-    private 
+    private
 
     def set_article
         @article = Article.find(params[:id])

@@ -1,0 +1,68 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+.bg-body-tertiary {
+    background-color: black !important;
+}
+    
+.nav-link {
+    color: white !important;
+ }
+
+ #logo {
+    float: left;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+ }
+
+ #home-container {
+    margin-top: 25px;
+ }
+
+ .customJumbotorn {
+    background-image: url("jumboBG.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text inside */
+ }
+
+
+.customJumbotorn .p-5 {
+    width: 100%; /* Adjust the width as needed */
+}
+
+.customJumbotorn h1 {
+    font-size: 3rem; /* Increase font size */
+}
+
+.customJumbotorn p, .customJumbotorn a {
+    font-size: 1.2rem; /* Increase font size */
+}
+
+.customJumbotorn .btn {
+    font-size: 1.1rem; /* Increase button font size */
+}
+
+.customJumbotorn .lead {
+    font-size: 1.5rem; /* Increase lead font size */
+}
+
+html,
+body {
+  height: 100%;
+  background-color: lightgray;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+

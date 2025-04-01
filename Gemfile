@@ -39,7 +39,7 @@ gem "thruster", require: false
 
 gem "jsbundling-rails"  # needed for bootstrap javascript
 gem "cssbundling-rails" # Install bootstrap 5
-gem 'will_paginate', '~> 4.0'
+gem "will_paginate", "~> 4.0"
 
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]

@@ -1,7 +1,5 @@
 class SessionsController < ApplicationController
-
     def new
-
     end
 
     def create
@@ -14,7 +12,6 @@ class SessionsController < ApplicationController
             flash.now[:alert] = "There was something wrong with your login detail"
             render "new"
         end
-
     end
 
     def destroy

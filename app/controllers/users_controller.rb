@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-    before_action :set_user, only: [:show, :edit, :update, :destroy]
-    before_action :require_user, only: [:edit, :update]
-    before_action :require_same_user, only: [:edit, :update, :destroy]
+    before_action :set_user, only: [ :show, :edit, :update, :destroy ]
+    before_action :require_user, only: [ :edit, :update ]
+    before_action :require_same_user, only: [ :edit, :update, :destroy ]
 
     def show
         @articles = @user.articles.paginate(page: params[:page], per_page: 5)
@@ -23,7 +23,7 @@ class UsersController < ApplicationController
             flash[:notice] = "Your account information is successfully updated"
             redirect_to @user
         else
-            render "edit" 
+            render "edit"
         end
     end
 
@@ -39,7 +39,7 @@ class UsersController < ApplicationController
     end
 
     def destroy
-        @user.destroy;
+        @user.destroy
         session[:user_id] = nil if @user == current_user
         flash[:notice] = "Accounts and all associated articles have been successfully deleted"
         redirect_to articles_path
@@ -60,5 +60,4 @@ class UsersController < ApplicationController
             redirect_to @user
         end
     end
-    
 end

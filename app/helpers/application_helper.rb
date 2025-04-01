@@ -1,6 +1,6 @@
 module ApplicationHelper
-    require 'digest'
-    require 'uri'
+    require "digest"
+    require "uri"
  
     def gravatar_for(user, options = { size: 80 })
         email_address = user.email.downcase

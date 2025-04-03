@@ -108,3 +108,14 @@ body {
 .flickr_pagination .next_page {
     margin-left: 1em; 
 }
+
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: $font-weight-bold;
+    font-weight: $white;
+    color: $badge-color;
+    border-radius: border-radius;
+    margin-right: 0.5em;
+    text-decoration: none !important;
+}
